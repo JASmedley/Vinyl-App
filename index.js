@@ -2,8 +2,11 @@
 const express = require('express')
 const app = express();
 const {v4:uuidv4} = require("uuid")
+const cors = require('cors')
 
 const PORT = 8888;
+
+app.use(cors())
 
 app.use(express.json())
 
